@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/styles/style.css">
+    <link rel="stylesheet" href="/src/styles/servicos.css">
+    <title>SERVIÇOS</title>
+    <link rel="stylesheet" href="/src/styles/high-contrast.css">
+</head>
+<body>
+    <header role="banner">
+        <div class="navbar-bottom">
+            <div class="logo">
+                <a href="" aria-label="Página inicial">
+                    <img src="/src/assets/img/logo.svg" alt="Logo da empresa">
+                </a>
+            </div>
+            
+            <nav class="navbar" role="navigation" aria-label="Menu principal">
+                <a href="/index.html">INÍCIO</a>
+                <a href="" id="services" aria-current="page">SERVIÇOS</a>
+                <a href="/src/pages/quem-somos-nos.html">QUEM SOMOS NÓS?</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="alto-contraste">
+        
+        <button id="toggle-contraste" aria-label="Ativar ou desativar modo alto contraste">
+      <img src="/src/assets/icons/highcontast.png" alt="" aria-hidden="true" />
+    </button>
+    </div>
+
+    <main role="main">
+        <section class="servicos-section" aria-label="Catálogo de serviços">
+            <div class="catalogo-section">
+                <div class="catalogo-section-1">
+                    <div class="image-container">
+                        <img src="/src/assets/img/fotos-piscinas/catalogo/pastilhacobalto.png" alt="Pastilha Cobalto 0,6mm | REF. 057 - Tamanho Original da Estampa: 4x4CM">
+                        <div class="image-description">Pastilha Cobalto 0,6mm | REF. 057</div>
+                    </div>
+                    <div class="image-container">
+                        <img src="/src/assets/img/fotos-piscinas/catalogo/masterstone.png" alt="Master Pastilha 0,6mm | REF. 041">
+                        <div class="image-description">Master Pastilha 0,6mm | REF. 041</div>
+                    </div>
+                    <div class="image-container">
+                        <img src="/src/assets/img/fotos-piscinas/catalogo/stoneblue.png" alt="Stone Blue 0,6mm | REF. 056">
+                        <div class="image-description">Stone Blue 0,6mm | REF. 056</div>
+                    </div>
+                </div>
+                <div class="catalogo-section-2">
+                    <div class="image-container">
+                        <img src="/src/assets/img/fotos-piscinas/catalogo/naturalstone.png" alt="Natual Stone 0,6mm | REF. 054">
+                        <div class="image-description">Natual Stone 0,6mm | REF. 054</div>
+                    </div>
+                    <div class="image-container">
+                        <img src="/src/assets/img/fotos-piscinas/catalogo/trancoso.png" alt="Trancoso 0,6mm | REF. 073">
+                        <div class="image-description">Trancoso 0,6mm | REF. 073</div>
+                    </div>
+                    <div class="image-container">
+                        <img src="/src/assets/img/fotos-piscinas/catalogo/maragogi.png" alt="Maragogi 0,6mm | REF. 072">
+                        <div class="image-description">Maragogi 0,6mm | REF. 072</div>
+                    </div>
+                </div>
+
+                <a class="orcamento-btn" target="_blank" href="https://wa.me/5511916590105" rel="noopener noreferrer" aria-label="Solicite seu orçamento via WhatsApp">
+                    FICOU INTERESSSADO? SOLICITE SEU ORÇAMENTO  
+                </a>
+        </section>
+    </main>
+    
+    <div class="navbar-top-3" aria-hidden="true"></div>
+
+    <footer role="contentinfo">
+        <section aria-label="Informações de contato">
+            <div class="logo-footer-and-assets">
+                <img src="/src/assets/img/logo-2.svg" alt="Logo da empresa no rodapé">
+
+                <div class="nosso-contatos">
+                    <a href="https://wa.me/5511916590105" target="_blank" aria-label="Contato via WhatsApp">
+                        <img src="/src/assets/img/icons/icons8-whatsapp.svg" alt="Ícone do WhatsApp">
+                        (11) 91659-0105
+                    </a>
+                    <a href="mailto:vinil_leste@gmail.com" target="_blank" aria-label="Contato via e-mail">
+                        <img src="/src/assets/img/icons/mark_email_unread.png" alt="Ícone de e-mail">
+                        vinil_leste@gmail.com
+                    </a>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script>
+  // Ativa o modo contraste se estava salvo
+  if (localStorage.getItem('modoContraste') === 'ativo') {
+    document.body.classList.add('contraste-ativo');
+  }
+
+  // Toggle contraste no clique
+  document.getElementById('toggle-contraste').addEventListener('click', function () {
+    document.body.classList.toggle('contraste-ativo');
+
+    if (document.body.classList.contains('contraste-ativo')) {
+      localStorage.setItem('modoContraste', 'ativo');
+    } else {
+      localStorage.removeItem('modoContraste');
+    }
+  });
+</script>
+
+</body>
+</html>

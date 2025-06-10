@@ -1,0 +1,165 @@
+#services {
+    color: #4c80d4;
+}
+#home {
+    color: white;
+}
+
+body {
+    background-image: url(/src/assets/img/fotos-piscinas/pool-servicos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+.servicos-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.catalogo-section {
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.catalogo-section-1,
+.catalogo-section-2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.catalogo-section-1 > .image-container > img,
+.catalogo-section-2 > .image-container > img {
+    width: 240px;
+    border: 15px solid #264080;
+    flex-shrink: 0;
+    transition: transform 0.1s, border 0.1s;
+}
+
+.catalogo-section-1 > .image-container > img:hover,
+.catalogo-section-2 > .image-container > img:hover {
+    transform: scale(1.0);
+    border: 20px solid #4A72B2;
+}
+
+.image-description {
+    background-color: #243553;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    width: 240px;
+    box-sizing: border-box;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-description:hover{
+    background-color: #264080;
+}
+
+.orcamento-btn {
+    background-color: #102362;
+    border: none;
+    padding: 20px;
+    color: white;
+    font-weight: 900;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+@media (max-width: 767px) {
+    .catalogo-section {
+        align-items: center; /* Centraliza os blocos de imagem */
+    }
+
+    .catalogo-section-1,
+    .catalogo-section-2 {
+        flex-direction: column; /* Coloca as imagens em coluna */
+        align-items: center; /* Centraliza os containers das imagens */
+        gap: 30px; /* Espaçamento entre os blocos de imagem */
+        width: 90%; /* Limita a largura do contêiner para telas menores */
+        margin: 0 auto; /* Centraliza o contêiner */
+    }
+
+    .image-container {
+        width: 100%; /* Os containers das imagens ocupam a largura total disponível */
+    }
+
+    .catalogo-section-1 > .image-container,
+    .catalogo-section-2 > .image-container {
+        margin: 0; /* Remove margens laterais nos containers de imagem */
+    }
+
+    .catalogo-section-1 > .image-container > img,
+    .catalogo-section-2 > .image-container > img {
+        border-width: 10px; /* Reduz a largura da borda */
+    }
+
+    .image-description {
+        font-size: 0.85em; /* Reduz o tamanho da fonte da descrição */
+    }
+
+    .botao-orcamento {
+        padding: 12px 25px; /* Reduz o padding do botão */
+        font-size: 0.9em; /* Reduz o tamanho da fonte do botão */
+        margin-top: 15px;
+    }
+}
+
+/* Para telas ainda menores (smartphones menores) */
+@media (max-width: 480px) {
+    .catalogo-section {
+        gap: 20px;
+    }
+
+    .catalogo-section-1 > .image-container > img,
+    .catalogo-section-2 > .image-container > img {
+        border-width: 8px;
+    }
+
+    .image-description {
+        font-size: 0.8em;
+        padding: 8px;
+    }
+
+    .botao-orcamento {
+        padding: 10px 20px;
+        font-size: 0.8em;
+    }
+}

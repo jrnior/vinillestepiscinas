@@ -1,0 +1,213 @@
+/*QUEM SOMOS NOS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section-sobre-nos {
+    display: flex;
+    padding: 50px;
+    background-image: url(/src/assets/img/fotos-piscinas/pool-quemsomosnos-bg.jpg);
+     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.section-sobre-nos > h2 {
+    font-weight: 900;
+     margin-bottom: 30px;
+     color: white;
+     font-size: 40px;
+}
+.pics-sobre-nos > img {
+    width: 400px;
+    margin-bottom: 10px;
+}
+.sobre-nos > p {
+    width: 1200px;
+    text-align: justify;
+    font-size: 25px;
+    font-weight: 400;
+    color: white;
+}
+#home {
+    color: #ffffff;
+}
+
+#about {
+    color: #4c80d4;
+}
+
+
+/* Telas  */
+@media (min-width: 1921px) {
+    .sobre-nos > p {
+        width: 1400px;
+        font-size: 28px;
+    }
+
+    .pics-sobre-nos > img {
+        width: 500px;
+    }
+
+    .section-sobre-nos > h2 {
+        font-size: 48px;
+    }
+}
+
+/* Telas Full HD a WQHD (desktops comuns) */
+@media (max-width: 1920px) {
+    .sobre-nos > p {
+        width: 1200px;
+        font-size: 25px;
+    }
+
+    .pics-sobre-nos > img {
+        width: 400px;
+    }
+}
+
+/* Laptops grandes e desktops menores */
+@media (max-width: 1440px) {
+    .sobre-nos > p {
+        width: 1000px;
+        font-size: 23px;
+    }
+
+    .pics-sobre-nos > img {
+        width: 350px;
+    }
+
+    .section-sobre-nos > h2 {
+        font-size: 36px;
+    }
+}
+
+/* Tablets (paisagem e retrato) */
+@media (max-width: 1024px) {
+    .sobre-nos > p {
+        width: 90%;
+        font-size: 21px;
+    }
+
+    .section-sobre-nos > h2 {
+        font-size: 32px;
+    }
+
+    .pics-sobre-nos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .pics-sobre-nos > img {
+        width: 280px;
+    }
+
+    .section-sobre-nos {
+        height: auto;
+        padding: 40px 20px;
+    }
+}
+
+/* Celulares grandes (ex: iPhone Plus, Galaxy Note) */
+@media (max-width: 768px) {
+    .sobre-nos > p {
+        width: 95%;
+        font-size: 19px;
+    }
+
+    .section-sobre-nos > h2 {
+        font-size: 28px;
+    }
+
+    .pics-sobre-nos > img {
+        width: 45%;
+    }
+
+    .section-sobre-nos {
+        height: auto;
+    }
+
+    .navbar-bottom {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo img {
+        max-width: 150px;
+        height: auto;
+    }
+}
+
+/* Celulares médios (ex: iPhone, Galaxy normais) */
+@media (max-width: 600px) {
+    .sobre-nos > p {
+        font-size: 17px;
+        padding: 0 10px;
+    }
+
+    .section-sobre-nos > h2 {
+        font-size: 24px;
+    }
+
+    .pics-sobre-nos > img {
+        width: 100%;
+    }
+
+    .pics-sobre-nos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo img {
+        max-width: 130px;
+    }
+}
+
+/* Celulares pequenos (até 480px) */
+@media (max-width: 480px) {
+    .section-sobre-nos {
+        padding: 30px 15px;
+        height: auto;
+    }
+
+    .section-sobre-nos > h2 {
+        font-size: 20px;
+    }
+
+    .sobre-nos > p {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .pics-sobre-nos > img {
+        width: 100%;
+    }
+
+    .navbar-bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        padding: 5px 0;
+    }
+
+    .logo img {
+        max-width: 120px;
+    }
+}

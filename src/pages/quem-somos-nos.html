@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/styles/style.css">
+    <link rel="stylesheet" href="/src/styles/quem-somos-nos.css">
+    <link rel="stylesheet" href="/src/styles/high-contrast.css">
+
+    <title>QUEM SOMOS NÓS?</title>
+</head>
+<body>
+    <header role="banner">
+        <div class="navbar-bottom">
+            <div class="logo">
+                <a href="" aria-label="Página inicial">
+                    <img src="/src/assets/img/logo.svg" alt="Logo da empresa">
+                </a>
+            </div>
+
+            <nav class="navbar" role="navigation" aria-label="Menu principal">
+                <a href="/index.html">INÍCIO</a>
+                <a href="/src/pages/servicos.html">SERVIÇOS</a>
+                <a href="" id="about" aria-current="page">QUEM SOMOS NÓS?</a>
+            </nav>
+        </div>
+    </header>
+
+
+    <div class="alto-contraste">
+  <button id="toggle-contraste" aria-label="Ativar ou desativar modo alto contraste">
+    <img src="/src/assets/icons/highcontast.png" alt="" aria-hidden="true" />
+  </button>
+</div>
+
+    <main role="main">    
+        <!-- SOBRE NOS -->
+        <section class="section-sobre-nos" aria-label="Seção sobre a empresa">
+            <h2>QUEM SOMOS NÓS?</h2>
+
+            <div class="sobre-nos">
+                <div class="pics-sobre-nos">
+                    <img class="pic018" src="/src/assets/img/fotos-piscinas/IMG-20250514-WA0018.jpg" alt="Foto de obra de piscina da empresa">
+                    <img class="pic017" src="/src/assets/img/fotos-piscinas/IMG-20250514-WA0017.jpg" alt="Foto de construção em andamento">
+                    <img class="pic016" src="/src/assets/img/fotos-piscinas/IMG-20250514-WA0014.jpg" alt="Equipe trabalhando na instalação da piscina">
+                </div>
+                <p>
+                    Nossa empresa é especializada em construção de piscinas em vinil, manutenção, troca de vinil e tudo relacionado a todas as piscinas que são as mais seguras existentes no mercado, que pode executar em qualquer formato, qualquer tipo de terreno e por todo o território do nacional.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <div class="navbar-top-3" aria-hidden="true"></div>
+
+    <footer role="contentinfo">
+        <section aria-label="Informações de contato">
+            <div class="logo-footer-and-assets">
+                <img src="/src/assets/img/logo-2.svg" alt="Logo da empresa no rodapé">
+
+                <div class="nosso-contatos">
+                    <a href="https://wa.me/5511916590105" target="_blank" aria-label="Contato via WhatsApp">
+                        <img src="/src/assets/img/icons/icons8-whatsapp.svg" alt="Ícone do WhatsApp">
+                        (11) 91659-0105
+                    </a>
+                    <a href="mailto:vinil_leste@gmail.com" target="_blank" aria-label="Contato via e-mail">
+                        <img src="/src/assets/img/icons/mark_email_unread.png" alt="Ícone de e-mail">
+                        vinil_leste@gmail.com
+                    </a>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script>
+  // Ativa modo contraste se salvo
+  if (localStorage.getItem('modoContraste') === 'ativo') {
+    document.body.classList.add('contraste-ativo');
+  }
+
+  document.getElementById('toggle-contraste').addEventListener('click', function () {
+    document.body.classList.toggle('contraste-ativo');
+
+    if (document.body.classList.contains('contraste-ativo')) {
+      localStorage.setItem('modoContraste', 'ativo');
+    } else {
+      localStorage.removeItem('modoContraste');
+    }
+  });
+</script>
+
+</body>
+</html>

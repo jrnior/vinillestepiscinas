@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles/style.css" />
+    <link rel="stylesheet" href="/src/styles/high-contrast.css">
+    <title>VINIL LESTE PISCINAS</title>
+    <link rel="icon" href="caminho/para/favicon.ico" type="image/x-icon" />
+
+</head>
+<body>
+    <header>
+        <nav class="navbar-bottom" aria-label="Menu principal">
+            <div class="logo">
+                <a href="" aria-label="Página inicial">
+                    <img src="src/assets/img/logo.svg" alt="Logotipo Vinil Leste Piscinas" />
+                </a>
+            </div>
+    
+            <div class="navbar">
+                <a href="index.html" id="home">INÍCIO</a>
+                <a href="src/pages/servicos.html" id="services">SERVIÇOS</a>
+                <a href="src/pages/quem-somos-nos.html" id="about">QUEM SOMOS NÓS?</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="alto-contraste">
+        
+        <button id="toggle-contraste" aria-label="Ativar ou desativar modo alto contraste">
+      <img src="src/assets/icons/highcontast.png" alt="" aria-hidden="true" />
+    </button>
+    </div>
+
+    <script>
+  // Aplica o modo contraste se já estiver salvo
+  if (localStorage.getItem('modoContraste') === 'ativo') {
+    document.body.classList.add('contraste-ativo');
+  }
+
+  // Alternar modo contraste no clique do botão
+  document.getElementById('toggle-contraste').addEventListener('click', function () {
+    document.body.classList.toggle('contraste-ativo');
+
+    // Salva estado no localStorage
+    if (document.body.classList.contains('contraste-ativo')) {
+      localStorage.setItem('modoContraste', 'ativo');
+    } else {
+      localStorage.removeItem('modoContraste');
+    }
+  });
+</script>
+
+
+
+    <main>    
+        <!-- INICIO -->
+        <section class="section-inicio" aria-labelledby="titulo-principal subtitulo-principal">
+            <div class="inicio">
+                <h1 id="titulo-principal">VINIL LESTE PISCINAS</h1>
+                <h2 id="subtitulo-principal">Limpeza &amp; Comprometimento</h2>
+                <a href="mailto:" aria-label="Enviar e-mail para a empresa" hidden></a>
+                <a class="orcamento-btn" target="_blank" href="https://wa.me/5511916590105" rel="noopener noreferrer" aria-label="Solicite seu orçamento via WhatsApp">
+                    SOLICITE SEU ORÇAMENTO  
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <div class="navbar-top-3" aria-hidden="true"></div>
+
+    <footer>
+        <section>
+            <div class="logo-footer-and-assets">
+                <img src="src/assets/img/logo-2.svg" alt="Logotipo Vinil Leste Piscinas" />
+
+                <div class="nosso-contatos">
+                    <a href="https://wa.me/5511916590105" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Vinil Leste Piscinas">
+                        <img src="src/assets/img/icons/icons8-whatsapp.svg" alt="Ícone WhatsApp" />
+                        (11) 91659-0105
+                    </a>
+                    <a href="mailto:vinil_leste@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Enviar e-mail para vinil_leste@gmail.com">
+                        <img src="src/assets/img/icons/mark_email_unread.png" alt="Ícone de e-mail" />
+                        vinil_leste@gmail.com
+                    </a>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,182 @@
+.alto-contraste {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000; /* Garante que fique acima de outros elementos */
+}
+
+.alto-contraste button {
+    background-color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.alto-contraste img {
+    width: 24px;
+    height: 24px;
+}
+
+/* high-contrast.css */
+
+body.contraste-ativo {
+    background-color: #000 !important;
+    color: #FFF !important;
+}
+
+body.contraste-ativo .navbar-top,
+body.contraste-ativo .navbar-top-2,
+body.contraste-ativo .navbar-top-3,
+body.contraste-ativo .navbar-bottom,
+body.contraste-ativo footer {
+    background-color: #000 !important;
+}
+
+body.contraste-ativo a,
+body.contraste-ativo .navbar > a,
+body.contraste-ativo .orcamento-btn,
+body.contraste-ativo .nosso-contatos > a {
+    color: #FFD700 !important;
+    border: 2px solid #FFD700 !important;
+    background: transparent !important;
+}
+
+body.contraste-ativo .navbar > a:hover,
+body.contraste-ativo .orcamento-btn:hover,
+body.contraste-ativo .nosso-contatos > a:hover {
+    background-color: #222 !important;
+    color: #FFF !important;
+}
+
+body.contraste-ativo .section-inicio {
+    background-image: none !important;
+    background-color: #000 !important;
+}
+
+body.contraste-ativo .inicio > h1,
+body.contraste-ativo .inicio > h2,
+body.contraste-ativo .inicio > p {
+    color: #FFF !important;
+}
+
+body.contraste-ativo img {
+    filter: grayscale(100%) contrast(200%);
+}
+
+body.contraste-ativo .logo-footer-and-assets > img,
+body.contraste-ativo .logo > a > img,
+body.contraste-ativo .nosso-contatos img {
+    filter: invert(100%) brightness(200%);
+}
+
+
+/* modo para serviços */
+
+body.contraste-ativo {
+    background-color: #000 !important;
+    color: #FFF !important;
+    background-image: none !important;
+}
+
+body.contraste-ativo .navbar-bottom,
+body.contraste-ativo footer {
+    background-color: #000 !important;
+}
+
+body.contraste-ativo a,
+body.contraste-ativo .navbar a,
+body.contraste-ativo .orcamento-btn,
+body.contraste-ativo .nosso-contatos a {
+    color: #FFD700 !important;
+    border: 2px solid #FFD700 !important;
+    background: transparent !important;
+}
+
+body.contraste-ativo .orcamento-btn:hover,
+body.contraste-ativo .navbar a:hover {
+    background-color: #111 !important;
+    color: #fff !important;
+}
+
+body.contraste-ativo .image-description {
+    background-color: #000 !important;
+    color: #FFD700 !important;
+    border: 1px solid #FFD700 !important;
+}
+
+body.contraste-ativo img {
+    filter: grayscale(100%) contrast(200%);
+}
+
+body.contraste-ativo .logo img,
+body.contraste-ativo .logo-footer-and-assets img,
+body.contraste-ativo .nosso-contatos img {
+    filter: invert(100%) brightness(200%);
+}
+
+
+/* Modo alto contraste para quem-somos-nos */
+
+body.contraste-ativo .section-sobre-nos {
+    background-image: none !important;
+    background-color: #000 !important; /* opcional, para fundo preto */
+}
+
+
+
+body.contraste-ativo .navbar-bottom,
+body.contraste-ativo footer {
+    background-color: #000 !important;
+}
+
+body.contraste-ativo a,
+body.contraste-ativo .navbar a {
+    color: #FFD700 !important;
+}
+
+body.contraste-ativo a:hover,
+body.contraste-ativo .navbar a:hover {
+    color: #fff !important;
+}
+
+body.contraste-ativo h2 {
+    color: #FFD700 !important;
+}
+
+body.contraste-ativo .sobre-nos > p {
+    color: #fff !important;
+}
+
+body.contraste-ativo .pics-sobre-nos > img {
+    filter: grayscale(100%) contrast(200%);
+}
+
+body.contraste-ativo .logo img,
+body.contraste-ativo .logo-footer-and-assets img,
+body.contraste-ativo .nosso-contatos img {
+    filter: invert(100%) brightness(200%);
+}
+
+/* Botão de contraste fixo */
+.alto-contraste {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 9999;
+}
+
+.alto-contraste button {
+    background-color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.alto-contraste img {
+    width: 24px;
+    height: 24px;
+}
